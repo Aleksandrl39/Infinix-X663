@@ -124,12 +124,6 @@ TW_NO_FASTBOOT_BOOT := true
 TW_INCLUDE_REPACKTOOLS := true
 TARGET_USES_MKE2FS := true
 
-TW_FRAMERATE := 120
-TW_BRIGHTNESS_PATH    := "/sys/class/leds/lcd-backlight/brightness"
-TW_MAX_BRIGHTNESS     := 2047
-TW_DEFAULT_BRIGHTNESS := 1200
-TW_NO_SCREEN_BLANK    := true
-
 # Excludes
 TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
@@ -149,3 +143,7 @@ TW_NEVER_UNMOUNT_SYSTEM := true
 
 # Version
 TW_DEVICE_VERSION := Naze | X663
+
+# Proper compression (gzip)
+BOARD_RAMDISK_COMPRESSOR := gzip
+BOARD_RAMDISK_COMPRESSOR_ARGS := -9
