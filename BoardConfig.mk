@@ -143,7 +143,7 @@ TARGET_USES_LOGD := true
 TW_NEVER_UNMOUNT_SYSTEM := true
 
 # Version
-TW_DEVICE_VERSION := Naze | X663
+TW_DEVICE_VERSION := X663
 
 # Proper compression (gzip)
 BOARD_RAMDISK_COMPRESSOR := gzip
